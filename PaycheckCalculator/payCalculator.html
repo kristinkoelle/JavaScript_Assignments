@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>
+		</title>
+
+	<body>
+		<form>
+			<fieldset>
+				<h1>Overtime Pay Calculator</h1>
+				Pay Rate: <input type="text" id="payrate"><br>
+				Hours Worked: <input type="text" id="hours"><br>
+
+				<input  type="submit" onclick="runPaycalculator()" value="Calculate Pay">
+				
+		<div class="row">
+			<div class="col-md-12"> 
+			<p id="paytotal"></p>
+			</div>		
+		</div>
+
+			</fieldset>
+		</form>
+	<script src="payCalculator.js"></script>
+
+	</body>
+</html>
