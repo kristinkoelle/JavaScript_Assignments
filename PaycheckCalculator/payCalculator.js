@@ -1,6 +1,18 @@
 function runPaycalculator (){
 	let userInputHours=document.getElementById("hours").value;
+	// validate user input 
+	/*
+	do { 
+	let userInputHours=document.getElementById("hours").value;
+	userInputHours=Number(userInputHours)
+	}
+	}
+	while(isNaN(userInputHours)){
+		//Alert Message 
+	
+	}*/
 	let userInputRate= document.getElementById("payrate").value;
+	// validate user input
 	let standardHours= 40;
 	let overtimeMult=1.5;
 if (userInputHours > standardHours) {

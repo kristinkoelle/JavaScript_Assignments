@@ -2,7 +2,7 @@
 
 function capitalizeFirstLetter(){
 	let userInputString=document.getElementById("uIString").value;
-	let userInputArray=userInputString.split(" ");
+	let userInputArray=userInputString.split("");
 	console.log(userInputArray);
 	let len=userInputArray.length
 	let finalArray=[];
