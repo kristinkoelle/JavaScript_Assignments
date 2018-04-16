@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="diceGame.css">
+		
+		<title>
+		</title>
+
+	<body>
+		<div class= "row">
+			<div class="col-md-6">			
+				<h1>Create a character:</h1>
+				Health:<div id="health"><br></div>
+				Strength:<div id="strength"><br></div>
+				Attack Max: <div id="attack"><br></div>
+				Speed:<div id="speed"><br>
+				<button type="button" onclick="createCharacter()" class="dice-roll">Create Character </button>
+				</div>
+				<h2 id="status" ></h2>
+				<h2 id="distance"></h2>
+			</div>
+			<div class="col-md-6" class="centeredRight">
+				<h1>Enemy</h1>
+				Health:<div id="healthEnemy"><br></div>
+				Strength:<div id="strengthEnemy"><br></div>
+				Attack Max: <div id="attack"><br></div>
+			</div>
+		</div>	
+
+		<div class="wrapper">
+		<div class="column">
+				
+				<div id="dice-side-1" class="diceChar">0</div>
+				<div id="dice-side-2" class="diceChar">0</div>
+				<div id="dice-side-3" class="diceChar">0</div>
+				<div id="dice-side-4" class="diceChar">0</div>
+				<div id="dice-side-enemy" class="diceEnemy">0</div>
+		</div>
+		<div class="column">
+				
+				<button type="button" onclick="playGame()" class="dice-roll">Play Game </button>
+				<button type="button" onclick="nextMove()" class="dice-roll">Next </button>
+
+				
+				<h2 id="score" class="status"></h2>
+				
+		</div>
+		</div>
+
+		<div class="row"> 
+			<div class="col-md-12"> 
+			
+			<p id="diceGame"></p>
+			</div>		
+		</div>
+
+			
+	
+	<script src="diceGame.js"></script>
+
+	</body>
+</html>

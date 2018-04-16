@@ -32,4 +32,4 @@
 
         }
         
-        window.onload=happyNumbers()
+         =happyNumbers()
